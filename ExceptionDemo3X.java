@@ -1,0 +1,32 @@
+import java.util.*;
+
+class Demo
+{
+    public static int Division(int No1,int No2) throws ArithmeticException
+    {
+        return No1 / No2;
+    }
+
+}
+
+
+class ExceptionDemo3X
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+
+        int No1 = 0, No2 = 0, Ans = 0;
+
+        System.out.println("Enter the first number : ");
+        No1 = sobj.nextInt();
+
+        System.out.println("Enter the second number : ");
+        No2 = sobj.nextInt();
+
+        Ans = Demo.Division(No1, No2);           // Exception prone code
+
+        System.out.println("Division is : "+Ans);      
+
+    }
+}
